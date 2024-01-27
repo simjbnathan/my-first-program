@@ -1,0 +1,52 @@
+// See https://aka.ms/new-console-template for more information
+
+//nums = [3,2,4], target = 6
+
+using System.Collections;
+using System.Globalization;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int[] num = { 1, 2, 3, 4 };
+        int target = 3;
+        int[] answer = TwoSum(num, target);
+    }
+
+    private static int[] TwoSum(int[] nums, int target)
+    {
+        Hashtable hashTable = new Hashtable();
+
+        // Populate the Hashtable with hash values
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int hashValue = SimpleHash(nums[i]);
+            hashTable.Add(i, hashValue);
+        }
+
+        // Check each index using hash values
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int hashValue = SimpleHash(nums[i]);
+            if (hashTable.ContainsKey(i) && (int)hashTable[i] == hashValue)
+            {
+                Console.WriteLine($"Hash value at index {i}: {hashValue}");
+            }
+            else
+            {
+                Console.WriteLine($"Hash value mismatch at index {i}");
+            }
+        }
+    }
+
+
+    
+    // Simple hash function (for demonstration purposes)
+    static int SimpleHash(int value)
+    {
+        // This is a simple example; you may want to use a more robust hash function in real scenarios
+        return value.GetHashCode();
+    }
+}
+

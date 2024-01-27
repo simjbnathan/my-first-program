@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstProgram", "MyFirstProgram\MyFirstProgram.csproj", "{0A1EC41D-6E49-4B4F-9C78-88E8CA043064}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FAA76078-0430-4F4C-BD38-6409758C8646}"
+	ProjectSection(SolutionItems) = preProject
+		BankingSystem.cs = BankingSystem.cs
+		FitnessTracker.cs = FitnessTracker.cs
+		GuessingGame.cs = GuessingGame.cs
+		LibrarySystem.cs = LibrarySystem.cs
+		OnlineQuizSystem.cs = OnlineQuizSystem.cs
+		OnlineStore.cs = OnlineStore.cs
+		OOP_Shapes = OOP_Shapes
+		QAGame = QAGame
+		RockPaperScissorGame = RockPaperScissorGame
+		SocialMedia.cs = SocialMedia.cs
+		TwoSum = TwoSum
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A1EC41D-6E49-4B4F-9C78-88E8CA043064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1EC41D-6E49-4B4F-9C78-88E8CA043064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1EC41D-6E49-4B4F-9C78-88E8CA043064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1EC41D-6E49-4B4F-9C78-88E8CA043064}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {354F7D2A-922B-4C68-A64A-31B8472822A3}
+	EndGlobalSection
+EndGlobal

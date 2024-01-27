@@ -1,0 +1,53 @@
+
+Random random = new Random();
+bool playAgain = true;
+string player = null;
+string computer;
+var listOfChoice = new List<string>()
+{
+    "ROCK", "PAPER", "SCISSOR"
+};
+
+
+while (playAgain)
+{
+    while (player is not "ROCK" and not "PAPER" and not "SCISSOR")
+    {
+        Console.WriteLine("Enter ROCK, PAPER, SCISSOR");
+        player = Console.ReadLine();
+        player = player.ToUpper();
+
+    }
+
+
+    switch (random.Next(1, 4))
+    {
+        case 1:
+            computer = "ROCK";
+            break;
+            case 2:
+            computer = "PAPER";
+            break;
+            case 3:
+            computer = "SCISSORS";
+            break;
+    }
+
+    Console.WriteLine("Player: " + player);
+    Console.WriteLine("Computer: " + player);
+
+    switch (player)
+    {
+        case "ROCK":
+            if (computer = "ROCK")
+            {
+                Console.WriteLine("Its a draw!");
+            } else if (computer =)
+            break;
+        case "PAPER":
+            break;
+        case "SCISSOR":
+            break;
+    }
+    Console.ReadKey();
+}

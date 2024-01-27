@@ -1,0 +1,62 @@
+// See https://aka.ms/new-console-template for more information
+
+Console.WriteLine("Hello, World!");
+
+
+List<Question> questions = new List<Question>
+{
+    new Question("What is the capital of France?", "Paris"),
+    new Question("Which planet is known as the Red Planet?", "Mars"),
+};
+
+ShuffleQuestions(questions);
+
+int score = 0;
+
+foreach (var question in questions)
+{
+    Console.WriteLine(question.Text);
+    string userAnswer = Console.ReadLine();
+
+    if (userAnswer.Equals(question.Answer, StringComparison.CurrentCultureIgnoreCase))
+    {
+        Console.WriteLine("Corrent! \n");
+        score++;
+    }
+    else
+    {
+        Console.WriteLine($"Incorrect. The correct answer is: {question.Answer}");
+    }
+
+    Console.WriteLine($"Quiz complete! Your score: {score}/{questions.Count}");
+
+
+}
+
+
+
+static void ShuffleQuestions(List<Question> questionList)
+{
+    Random random = new Random();
+    int n = questionList.Count;
+    while (n > 1)
+    {
+        n--;
+        int k= random.Next(n+1);
+        Question value = questionList[k];
+        questionList[k] = questionList[n];
+        questionList[n] = value;
+    }
+}
+
+class Question
+{
+    public string Text; 
+    public string Answer;
+    
+    public Question (string text, string answer)
+    {
+        Text = text;
+        Answer = answer;
+    }
+}
